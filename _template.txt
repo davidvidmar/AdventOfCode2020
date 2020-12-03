@@ -4,24 +4,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AdventOfCode2019
+namespace AdventOfCode2020
 {
     class Program
     {
         static void Main()
         {
-            Utils.WriteStart(_);
-            Utils.WritePart(1);
+            int result1 = 0;
+            int result2 = 0;
+
+            Utils.StartDay(?);
+            Utils.StartPart(1);
 
             // ...
 
-            Utils.WriteResult("");
+            Utils.EndPart(1, result1);
 
-            Utils.WritePart(2);
+            Utils.StartPart(2);
 
             // ...
 
-            Utils.WriteResult("");
+            Utils.EndPart(2, result2);
 
             Utils.Wait();
         }
