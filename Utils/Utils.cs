@@ -17,7 +17,7 @@ namespace AdventOfCode2020
 
         public static void StartPart(int part)
         {
-            Console.ForegroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine($"\nPart {part}\n");
             Console.ResetColor();
 
@@ -33,14 +33,22 @@ namespace AdventOfCode2020
         {
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine($"\nResult  = {value}");
-            Console.WriteLine($"\nElapsed = {watches[part-1].Elapsed}\n");
+            Console.ForegroundColor = ConsoleColor.Gray;
+            Console.WriteLine($"Elapsed = {watches[part-1].Elapsed}\n");
             Console.ResetColor();
         }
 
         public static void Wait()
         {
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("Press any key...");
-            Console.ReadKey();
+            Console.ResetColor();
+            Console.ReadKey();        
+        }
+
+        public static string[] ReadInputAsLines(string filename = "input.txt")
+        {
+            return File.ReadAllLines(filename);            
         }
 
         public static IEnumerable<Int32> ReadInputAsIntLines(string filename = "input.txt")
