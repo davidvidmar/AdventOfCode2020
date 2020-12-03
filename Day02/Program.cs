@@ -15,7 +15,7 @@ namespace AdventOfCode2020
             Utils.StartPart(1);
 
             var input = Utils.ReadInputAsLines();
-            
+
             foreach (var line in input)
             {
                 int policyMin, policyMax;
@@ -33,7 +33,7 @@ namespace AdventOfCode2020
 
             // part 2
 
-            
+
 
             var input2 = new[] { "1-3 a: abcde", "1-3 b: cdefg", "2-9 c: ccccccccc" };
 
@@ -47,11 +47,11 @@ namespace AdventOfCode2020
 
                 if (CheckPassword2(policyMin, policyMax, policyLetter, password))
                     Console.WriteLine(password);
-                    result++;
+                result++;
             }
 
             Utils.StartPart(2);
-            
+
             result = 0;
             foreach (var line in input)
             {
