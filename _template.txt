@@ -15,7 +15,8 @@ namespace AdventOfCode2020
 
             Utils.StartDay(?);
             Utils.StartPart(1);
-
+            
+            var lines = Utils.ReadInputAsLines();
             // ...
 
             Utils.EndPart(1, result1);
