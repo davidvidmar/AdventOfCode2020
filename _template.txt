@@ -26,8 +26,6 @@ namespace AdventOfCode2020
             // ...
 
             Utils.EndPart(2, result2);
-
-            Utils.Wait();
         }
     }
 }

@@ -24,9 +24,9 @@ namespace AdventOfCode2020
             watches[part - 1].Start();
         }
 
-        public static void EndPart(int part, long value)
-        {
-            EndPart(part, value.ToString());
+        public static void EndPart(int part, long value = 0)
+        {            
+            EndPart(part, value != 0 ? value.ToString(): "");
         }
 
         public static void EndPart(int part, string value)
