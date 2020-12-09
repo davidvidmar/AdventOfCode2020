@@ -56,12 +56,18 @@ namespace AdventOfCode2020
             return from q in File.ReadAllLines(filename) select Convert.ToInt32(q);
         }
 
+        public static IEnumerable<long> ReadInputAsLongLines(string filename = "input.txt")
+        {
+            return from q in File.ReadAllLines(filename) select Convert.ToInt64(q);
+        }
+
         public static IEnumerable<Int32> ReadInputAsIntArray(string filename = "input.txt")
         {
             var inputFile = File.ReadAllText(filename);
             return from q in inputFile.Split(',') select Convert.ToInt32(q);
         }
-            public static IEnumerable<string[]> ReadInputAsStringArrays(string filename = "input.txt")
+            
+        public static IEnumerable<string[]> ReadInputAsStringArrays(string filename = "input.txt")
         {
             return from q in File.ReadAllLines(filename) select q.Split(',');
         }
