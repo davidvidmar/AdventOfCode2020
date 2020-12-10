@@ -34,9 +34,8 @@ namespace AdventOfCode2020
 
         private static long CheckNumbers(int frameLen, List<long> nums)
         {
-            int i = frameLen;
-            var fail = false;
-            while (!fail && i < nums.Count)
+            int i = frameLen;            
+            while (i < nums.Count)
             {
                 var num = nums[i];
                 var j = i - frameLen;
